@@ -13,4 +13,7 @@ scoreboard objectives add wins dummy "勝利数"
 scoreboard objectives add losses dummy "敗北数"
 scoreboard objectives add rate dummy "レート"
 
+bossbar add timer "残り時間"
+bossbar set timer color green
+
 tellraw @a {"text": "§6[bowpvp] §fbowpvpを読み込みました"}
