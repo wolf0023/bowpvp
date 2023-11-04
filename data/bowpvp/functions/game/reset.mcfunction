@@ -16,3 +16,7 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game "退出検
 scoreboard objectives add ingame dummy "ゲーム中判定"
 scoreboard objectives add timer dummy "タイマー"
 scoreboard objectives add players dummy "プレイヤー数"
+
+bossbar remove timer
+bossbar add timer "残り時間"
+bossbar set timer color green
