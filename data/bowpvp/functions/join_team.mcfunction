@@ -1,5 +1,5 @@
 # 切り替え用
-scoreboard players set @s ingame 1
+scoreboard players set @s ingame 2
 
 # gamemasterにプレイヤー数を追加、複数試合はできない
 execute unless score $gm players matches 2.. run scoreboard players add $gm players 1
