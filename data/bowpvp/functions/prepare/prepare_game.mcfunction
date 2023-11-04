@@ -14,4 +14,6 @@ execute if score $gm ingame matches 2 run scoreboard players set $gm timer 2
 execute if score $gm ingame matches 2 run title @a[scores={ingame=3}] title {"text": "§6§lゲーム開始！"}
 execute if score $gm ingame matches 2 run tellraw @a [{"text": "§6[bowpvp] §fBow 1vs1が開始しました！"}]
 execute if score $gm ingame matches 2 run tellraw @a [{"text": "§6[bowpvp] 対戦者: "},{"selector":"@a[team=redteam]","color": "red"},{"text": " §fvs "},{"selector":"@a[team=blueteam]","color": "blue"}]
+execute if score $gm ingame matches 2 run playsound block.note_block.harp master @a[scores={ingame=3}] ~ ~ ~ 1 2
+execute if score $gm ingame matches 2 run effect give @a[scores={ingame=3}] instant_health 1 9
 execute if score $gm ingame matches 2 run scoreboard players set $gm ingame 3

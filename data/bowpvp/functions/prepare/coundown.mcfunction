@@ -14,5 +14,4 @@ execute if score $countdown timer matches 100 run playsound block.note_block.har
 
 execute if score $countdown timer matches 120.. run scoreboard players set @a[scores={ingame=1}] ingame 3
 execute if score $countdown timer matches 120.. run scoreboard players set $gm timer 0
-execute if score $countdown timer matches 120 run playsound block.note_block.harp master @a[scores={ingame=3}] ~ ~ ~ 1 2
 execute if score $countdown timer matches 120.. run function bowpvp:prepare/prepare_game
