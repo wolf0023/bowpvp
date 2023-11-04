@@ -12,6 +12,6 @@ execute if score $countdown timer matches 80 run playsound block.note_block.harp
 execute if score $countdown timer matches 100 run tellraw @a[scores={ingame=1}] {"text": "§6[bowpvp] 開始まで１..."}
 execute if score $countdown timer matches 100 run playsound block.note_block.harp master @a[scores={ingame=1}] ~ ~ ~ 1 1
 
-execute if score $countdown timer matches 120.. run scoreboard players set @a[scores={ingame=1}] ingame 3
-execute if score $countdown timer matches 120.. run scoreboard players set $gm timer 0
-execute if score $countdown timer matches 120.. run function bowpvp:prepare/prepare_game
+execute if score $countdown timer matches 120 run scoreboard players set @a[scores={ingame=1}] ingame 3
+execute if score $countdown timer matches 120 run scoreboard players set $gm timer 0
+execute if score $countdown timer matches 120 run function bowpvp:prepare/prepare_game
