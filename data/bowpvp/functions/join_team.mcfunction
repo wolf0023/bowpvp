@@ -8,5 +8,3 @@ execute if entity @s[team=redteam] run tp 18 -59 4
 
 execute if score $gm players matches 2 run team join blueteam @s
 execute if entity @s[team=blueteam] run tp -3 -59 4
-
-scoreboard players reset @s death
