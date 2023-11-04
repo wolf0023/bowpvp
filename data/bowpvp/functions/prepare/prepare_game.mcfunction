@@ -12,3 +12,5 @@ execute if score $gm ingame matches 2 as @a[scores={ingame=2}] run function bowp
 execute if score $gm ingame matches 2 run scoreboard players set $gm timer 2
 execute if score $gm ingame matches 2 run scoreboard players set $gm ingame 3
 execute if score $gm ingame matches 2 run title @a[scores={ingame=2}] title {"text": "§6§lゲーム開始！"}
+execute if score $gm ingame matches 2 run tellraw @a [{"text": "§6[bowpvp] §fBow 1vs1が開始しました！"}]
+execute if score $gm ingame matches 2 run tellraw @a [{"text": "§6[bowpvp] 対戦者: "},{"selector":"@a[team=redteam]","color": "red"},{"text": " §fvs "},{"selector":"@a[team=blueteam]","color": "blue"}]

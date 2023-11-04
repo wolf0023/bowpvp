@@ -5,4 +5,4 @@ execute store result bossbar timer value run scoreboard players get $timer timer
 scoreboard players remove $timer timer 1
 
 execute if score $timer timer matches ..1200 run tellraw @a[scores={ingame=2}] {"text": "§6[bowpvp] §fゲーム終了まで残り1分！"}
-execute if score $timer timer matches ..0 run function bowpvp:game/timer/gameover
+execute if score $timer timer matches ..0 as @a[scores={ingame=2}] run function bowpvp:game/timer/gameover
