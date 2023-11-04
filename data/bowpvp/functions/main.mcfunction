@@ -9,6 +9,7 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game "退出検
 scoreboard objectives add ingame dummy "ゲーム中判定"
 scoreboard objectives add timer dummy "タイマー"
 scoreboard objectives add players dummy "プレイヤー数"
+
 scoreboard objectives add wins dummy "勝利数"
 scoreboard objectives add losses dummy "敗北数"
 scoreboard objectives add rate dummy "レート"
