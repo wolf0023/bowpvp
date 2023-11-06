@@ -11,5 +11,5 @@ execute unless score $gm ingame matches 1.. if score @s ingame matches 1 run fun
 execute if score @s ingame matches 2 run scoreboard players set @s ingame 1
 
 #エラー用メッセージ
-execute if score $gm players matches 2.. run tellraw @s {"text": "§6[bowpvp] §cすでにプレイヤーが二人います！"}
-execute if score $gm ingame matches 1.. run tellraw @s {"text": "§6[bowpvp] §cすでにゲームが始まっています！"}
+execute if score $gm players matches 2.. run tellraw @s {"text": "§6[bowpvp] §cError: すでにプレイヤーが二人います"}
+execute if score $gm ingame matches 1.. run tellraw @s {"text": "§6[bowpvp] §cError: すでにゲームが始まっています"}
