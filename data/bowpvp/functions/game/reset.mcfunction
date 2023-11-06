@@ -1,5 +1,6 @@
 # ロビーへの転送
 tp @a[scores={ingame=1..}] 8 -59 12
+clear @a[scores={ingame=1..}]
 
 # リセット用
 scoreboard objectives remove death
