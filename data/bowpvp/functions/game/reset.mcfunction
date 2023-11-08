@@ -1,5 +1,5 @@
 # ロビーへの転送
-tp @a[scores={ingame=1..}] 8 -59 12
+tp @a[scores={ingame=1..}] 109 4 -152
 clear @a[scores={ingame=1..}]
 
 # リセット用
