@@ -3,6 +3,8 @@ team add redteam "§c赤チーム"
 team add blueteam "§b青チーム"
 team modify redteam color red
 team modify blueteam color aqua
+team modify redteam nametagVisibility hideForOtherTeams
+team modify blueteam nametagVisibility hideForOtherTeams
 
 scoreboard objectives add death deathCount "死亡検知"
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game "退出検知"
