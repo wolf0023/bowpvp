@@ -2,4 +2,4 @@
 scoreboard players set @s ingame 0
 execute if score $gm players matches 1.. run scoreboard players remove $gm players 1
 team leave @s
-tp @s 109 4 -152
+tp @s 166 34 -110
